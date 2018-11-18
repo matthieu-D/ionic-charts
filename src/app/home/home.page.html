@@ -6,7 +6,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>If you get lost, the <a target="_blank" rel="noopener" href="https://ionicframework.com/docs">docs</a> will be your guide.</p>
+<ion-content padding style="display:inline">
+  <div id="pie-chart-div"></div>
+  <google-chart [data]="pieChartData"></google-chart>
+  <div style="position: relative; height:400px; width:400px">
+    <canvas id="canvas-chart"></canvas>
+  </div>
 </ion-content>
